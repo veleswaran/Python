@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>hi welcome {{name}}</h1>
+
+<form action="add" >
+    <label for="" >Enter the first number</label>
+    <input type="number" name="num"><br>
+    <label for="" >Enter the second number</label>
+    <input type="number" name="num1"><br>
+    <input type="submit">
+</form>
+{% endblock%}
