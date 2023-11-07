@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navhead{
+    position: fixed;
+    top: 0px;
+    border: 1px solid black;
+    z-index: 1;
+}
+.navitems{
+    position: fixed;
+    top: 80px;
+    height: 80vh;
+    overflow: auto;
+}
+.section1{
+    position: relative;
+    left: 17%;
+    top: 80px;
+}
