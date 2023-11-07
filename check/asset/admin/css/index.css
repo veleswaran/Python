@@ -7,7 +7,13 @@
 
 .head1{
     background-image: url('/static/images/grass.jpg');
-    height: 400px;
+    height: 800px;
     background-repeat: no-repeat;
     background-size: 100% 100%;
+}
+td{
+    padding-top: 30px;
+}
+.transparent-table{
+    background-color: transparent;
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 {% load static %}
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -59,34 +60,40 @@
                     {% endif%}
                   </ul>
                
-                </form>
+               
               </div>
             </div>
           </nav>
     </div>
     <div class="container-fluid head1 mt-2">
-
-    </div>
-    <div class="container rounded">
-      <h1 class="h1 text-center mt-3">Student activity  </h1>
-        <table class="table table-dark table-rounded">
-            <thead class="text-center">
-                <th>Name</th>
-                <th>Date</th>
-                <th>topic</th>
-                <th>activity</th>
-            </thead>
-            <tbody>
-                {% for user in users %}
-                <tr class="text-center">
-                    <td>{{user.username}}</td>
-                    <td>{{user.date}}</td>
-                    <td>{{user.topic}}</td>
-                    <td>{{user.activity}}</td>
-                </tr>
-                {% endfor %}
-            </tbody>
-        </table>
-    </div>
+      <div class="container rounded">
+        <h1 class="h1 text-center mt-3">Student activity  </h1>
+        
+          <table class="table bg-transparent transparent-table">
+              <thead class="text-center">
+                  <th>Name</th>
+                  <th>Date</th>
+                  <th>topic</th>
+                  <th>activity</th>
+                  <th>images</th>
+              </thead>
+              <tbody>
+                  {% for user in users %}
+                  <tr class="text-center ">
+                      <td class="align-middle">{{user.username}}</td>
+                      <td class="align-middle">{{user.date}}</td>
+                      <td class="align-middle">{{user.topic}}</td>
+                      <td class="align-middle">{{user.activity}}</td>
+                      <td>  
+                        <img src="{{ user.image.url }}" alt="{{ user.topic }} Image" width="100px" height="100px" class="rounded-circle">
+  
+                      </td>
+                   
+                  </tr>
+                  {% endfor %}
+              </tbody>
+          </table>
+      </div>
+    </div>   
 </body>
 </html>

@@ -9,3 +9,4 @@ class dailytopic(models.Model):
     activity = models.TextField()
     username = models.ForeignKey(User,on_delete=models.CASCADE)
     date = models.DateField(auto_now_add=True)
+    image = models.ImageField(upload_to='images/' ,null=True)
