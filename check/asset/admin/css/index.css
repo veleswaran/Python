@@ -16,4 +16,5 @@ td{
 }
 .transparent-table{
     background-color: transparent;
+    opacity: 0.4;
 }
