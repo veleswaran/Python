@@ -1,2 +1,2 @@
 # Python
-tokan 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
+tokan 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
